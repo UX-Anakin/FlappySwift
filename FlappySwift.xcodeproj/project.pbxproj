@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21210B4AD8B7685148982C91 /* Pods_FlappySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446AC55B92B4BD1435538F24 /* Pods_FlappySwift.framework */; };
+		8E66719B1EC4A1170066AF48 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E66719A1EC4A1170066AF48 /* extension.swift */; };
 		8EE239091EC06D8900C55681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE239081EC06D8900C55681 /* AppDelegate.swift */; };
 		8EE2390B1EC06D8900C55681 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2390A1EC06D8900C55681 /* GameScene.sks */; };
 		8EE2390D1EC06D8A00C55681 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8EE2390C1EC06D8A00C55681 /* Actions.sks */; };
@@ -15,9 +17,12 @@
 		8EE239141EC06D8A00C55681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE239121EC06D8A00C55681 /* Main.storyboard */; };
 		8EE239161EC06D8A00C55681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE239151EC06D8A00C55681 /* Assets.xcassets */; };
 		8EE239191EC06D8B00C55681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE239171EC06D8B00C55681 /* LaunchScreen.storyboard */; };
+		8EE239241EC0736900C55681 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE239231EC0736900C55681 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		446AC55B92B4BD1435538F24 /* Pods_FlappySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlappySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E66719A1EC4A1170066AF48 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		8EE239051EC06D8800C55681 /* FlappySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE239081EC06D8900C55681 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EE2390A1EC06D8900C55681 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -28,6 +33,9 @@
 		8EE239151EC06D8A00C55681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EE239181EC06D8B00C55681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EE2391A1EC06D8B00C55681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE239231EC0736900C55681 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		96EB95FD571BFE14E34E25E4 /* Pods-FlappySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlappySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlappySwift/Pods-FlappySwift.release.xcconfig"; sourceTree = "<group>"; };
+		BE896DCCB49BE556DCCF5917 /* Pods-FlappySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlappySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlappySwift/Pods-FlappySwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21210B4AD8B7685148982C91 /* Pods_FlappySwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3913BB6733684F7ED031A1FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				446AC55B92B4BD1435538F24 /* Pods_FlappySwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F448E1FB62A0890A5AD3D3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE896DCCB49BE556DCCF5917 /* Pods-FlappySwift.debug.xcconfig */,
+				96EB95FD571BFE14E34E25E4 /* Pods-FlappySwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E6671991EC4A0F40066AF48 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E66719A1EC4A1170066AF48 /* extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		8EE238FC1EC06D8700C55681 = {
 			isa = PBXGroup;
 			children = (
 				8EE239071EC06D8900C55681 /* FlappySwift */,
 				8EE239061EC06D8800C55681 /* Products */,
+				7F448E1FB62A0890A5AD3D3B /* Pods */,
+				3913BB6733684F7ED031A1FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,16 +97,42 @@
 			isa = PBXGroup;
 			children = (
 				8EE239081EC06D8900C55681 /* AppDelegate.swift */,
+				8E6671991EC4A0F40066AF48 /* Extension */,
+				8EE239221EC0734100C55681 /* View */,
+				8EE239211EC0733700C55681 /* Mode */,
+				8EE239201EC0732D00C55681 /* Controller */,
 				8EE2390A1EC06D8900C55681 /* GameScene.sks */,
 				8EE2390C1EC06D8A00C55681 /* Actions.sks */,
 				8EE2390E1EC06D8A00C55681 /* GameScene.swift */,
-				8EE239101EC06D8A00C55681 /* GameViewController.swift */,
 				8EE239121EC06D8A00C55681 /* Main.storyboard */,
 				8EE239151EC06D8A00C55681 /* Assets.xcassets */,
 				8EE239171EC06D8B00C55681 /* LaunchScreen.storyboard */,
 				8EE2391A1EC06D8B00C55681 /* Info.plist */,
 			);
 			path = FlappySwift;
+			sourceTree = "<group>";
+		};
+		8EE239201EC0732D00C55681 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EE239101EC06D8A00C55681 /* GameViewController.swift */,
+				8EE239231EC0736900C55681 /* MenuViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8EE239211EC0733700C55681 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mode;
+			sourceTree = "<group>";
+		};
+		8EE239221EC0734100C55681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EE2391D1EC06D8B00C55681 /* Build configuration list for PBXNativeTarget "FlappySwift" */;
 			buildPhases = (
+				05D1EBFF4DD5035CB8532197 /* [CP] Check Pods Manifest.lock */,
 				8EE239011EC06D8800C55681 /* Sources */,
 				8EE239021EC06D8800C55681 /* Frameworks */,
 				8EE239031EC06D8800C55681 /* Resources */,
+				ABE9331763C15517C01A6056 /* [CP] Embed Pods Frameworks */,
+				FE024215BC32AF9BFABFF127 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +208,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05D1EBFF4DD5035CB8532197 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE9331763C15517C01A6056 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlappySwift/Pods-FlappySwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE024215BC32AF9BFABFF127 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlappySwift/Pods-FlappySwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8EE239011EC06D8800C55681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,6 +264,8 @@
 				8EE2390F1EC06D8A00C55681 /* GameScene.swift in Sources */,
 				8EE239111EC06D8A00C55681 /* GameViewController.swift in Sources */,
 				8EE239091EC06D8900C55681 /* AppDelegate.swift in Sources */,
+				8E66719B1EC4A1170066AF48 /* extension.swift in Sources */,
+				8EE239241EC0736900C55681 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +386,12 @@
 		};
 		8EE2391E1EC06D8B00C55681 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE896DCCB49BE556DCCF5917 /* Pods-FlappySwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9669MJ564;
 				INFOPLIST_FILE = FlappySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chyiyaqing-gmail.FlappySwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,10 +401,12 @@
 		};
 		8EE2391F1EC06D8B00C55681 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96EB95FD571BFE14E34E25E4 /* Pods-FlappySwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X9669MJ564;
 				INFOPLIST_FILE = FlappySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chyiyaqing-gmail.FlappySwift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -314,6 +433,7 @@
 				8EE2391F1EC06D8B00C55681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
